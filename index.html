@@ -1,15 +1,27 @@
 <html class="h-full m-0">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bollywood by Vibha</title>
+
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" 
 				rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" 
 				rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap" 
+				rel="stylesheet">
   <style>
 
+	#title {
+		/* 
+		font-family: 'Macondo', cursive; 
+		*/
+		font-family: 'Amita', cursive;
+		font-size: xx-large; 
+	}
+
 	#banner {
-		position: relative;
 		background-image: url("img/background.jpg");
-		min-height: 90%;
 	}
   </style>
 </head>
@@ -18,25 +30,27 @@
 <!-- header -->
 <nav class="flex items-center justify-between flex-wrap bg-gradient-to-r from-blue-900  px-6 py-4 shadow-lg mb-1">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
-		<span class="font-semibold"
-				  style="font-family: 'Macondo', cursive; font-size: xx-large;">Bollywood By Vibha</span>
+		<span id=title 
+					class="font-semibold">
+					Bollywood By Vibha
+		</span>
   </div>
 </nav>
 
 <!-- main -->
-<div id="banner" class="flex justify-center flex-wrap">
-	<div class="bg-white min-w-sm max-w-sm rounded overflow-hidden shadow-lg m-3 border-r-2 border-b-2 border-gray-700">
+<div id="banner" class="flex justify-center flex-col md:flex-row md:flex-wrap">
+	<div class="bg-white min-w-sm max-w-sm h-auto rounded overflow-hidden shadow-lg m-3 border-r-2 border-b-2 border-gray-700">
 		<img class="w-full" src="img/bio.jpg" alt="Sunset in the mountains" />
 		<div class="px-6 py-4">
 			<div class="font-bold text-xl mb-2">BollyX, The Bollywood Workout</div>
 		
 			<p>Join me for 30mins of dance-cardio fun!</p>
 			<br />
-
-				Coming this Winter to a Zoom near you....Stay tuned for details!!<br />
-					<p>
-
-						<br />
+			<p>
+				Coming this Winter to a Zoom near you....Stay tuned for details!!	
+			</p>
+			<br />
+			<p>						
 				BollyX is a Bollywood-inspired dance-fitness program that combines dynamic 
 				choreography with the hottest music from around the world! The workout 
 				cycles between higher and lower-intensity & the easy dance sequences get 
@@ -72,7 +86,7 @@
 	</div>
 
 	<div class="flex flex-col">
-		<div class="rounded overflow-hidden shadow-lg bg-white m-3 border-r-2 border-b-2 border-gray-700" style="width: 400px;">
+		<div class="rounded overflow-hidden min-w-sm max-w-sm shadow-lg bg-white m-3 border-r-2 border-b-2 border-gray-700 sm:w-full">
 			<div class="flex my-3"
 						onclick="window.open('https://www.instagram.com/bollywooddance_byvibha','mywindow');" 
 						style="cursor: pointer;">
@@ -83,11 +97,10 @@
 			</div>
 		</div>
 
-		<iframe src="https://www.instagram.com/p/CDcAeHxFgYt/embed" 
-						width="400" 
-						height="500" 
+		<iframe src="https://www.instagram.com/p/CDcAeHxFgYt/embed" 						
 						frameborder="0" 
-						class="rounded overflow-hidden shadow-lg m-3 border-r-2 border-b-2 border-gray-700"
+						class="rounded overflow-hidden min-w-sm max-w-sm shadow-lg m-3 border-r-2 border-b-2 border-gray-700 sm:w-full"
+						height="600"
 						scrolling="no" 
 						allowtransparency="true"></iframe>
 
